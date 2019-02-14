@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String[] items = {"MUSC 222", "CITA 395", "CSCI 250", "CITA 180", "MUSC 345"};
+        String[] items = getResources().getStringArray(R.array.class_list);
 
         list = findViewById(R.id.class_schedule);
 
@@ -36,5 +36,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Toast.makeText(getApplicationContext(), "Long Click", Toast.LENGTH_SHORT).show();
                 return true;
+            }
+        });
     }
 }

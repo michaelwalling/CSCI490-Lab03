@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">ListViewDemo</string>
-
+    <string-array name="class_list">
+        <item>CITA 395</item>
+        <item>MUSC 222</item>
+        <item>CSCI 250</item>
+        <item>CITA 180</item>
+        <item>MUSC 345</item>
+    </string-array>
 </resources>
